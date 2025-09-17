@@ -1,0 +1,48 @@
+Sep-17 14:27:51.779 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --query FinalBlastDB
+Sep-17 14:27:51.895 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.7
+Sep-17 14:27:51.922 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/morrissamantha/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch1,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4-patch1,nf-wave@1.12.1
+Sep-17 14:27:51.954 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-17 14:27:51.955 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-17 14:27:51.957 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Sep-17 14:27:51.970 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-17 14:27:52.012 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/morrissamantha/.nextflow/secrets/store.json
+Sep-17 14:27:52.024 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@41f35f7c] - activable => nextflow.secret.LocalSecretsProvider@41f35f7c
+Sep-17 14:27:52.068 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Sep-17 14:27:52.082 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [sick_ride] DSL2 - revision: 110cf5958c
+Sep-17 14:27:52.084 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-17 14:27:52.084 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-17 14:27:52.139 [main] DEBUG nextflow.Session - Session UUID: a1b9628d-d263-461f-9dd8-595510930619
+Sep-17 14:27:52.140 [main] DEBUG nextflow.Session - Run name: sick_ride
+Sep-17 14:27:52.141 [main] DEBUG nextflow.Session - Executor pool size: 256
+Sep-17 14:27:52.150 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sep-17 14:27:52.155 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=768; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sep-17 14:27:52.183 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.7 build 5955
+  Created: 08-09-2025 13:29 UTC (20:29 GMT+07:00)
+  System: Linux 4.18.0-521.el8.x86_64
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 410019@r07.cluster [192.168.20.17]
+  CPUs: 256 - Mem: 755.2 GB (143.9 GB) - Swap: 68 GB (67.9 GB)
+Sep-17 14:27:52.212 [main] DEBUG nextflow.Session - Work-dir: /mnt/NAS_PROJECT/vol_Phucteam/DATA_SAMANTHA/Netflow_Learning/Part1/nextflow_tutorial/work [nfs]
+Sep-17 14:27:52.212 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/NAS_PROJECT/vol_Phucteam/DATA_SAMANTHA/Netflow_Learning/Part1/nextflow_tutorial/bin
+Sep-17 14:27:52.225 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-17 14:27:52.235 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-17 14:27:52.240 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sep-17 14:27:52.272 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-17 14:27:52.281 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 257; maxThreads: 1000
+Sep-17 14:27:52.365 [main] DEBUG nextflow.Session - Session start
+Sep-17 14:27:52.762 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-17 14:27:52.781 [main] INFO  nextflow.script.BaseScript - I will BLAST FinalBlastDB against myBlastDatabase
+Sep-17 14:27:52.784 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: 
+Sep-17 14:27:52.786 [main] DEBUG nextflow.Session - Igniting dataflow network (0)
+Sep-17 14:27:52.786 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_8b45643e1c688be9: /mnt/NAS_PROJECT/vol_Phucteam/DATA_SAMANTHA/Netflow_Learning/Part1/nextflow_tutorial/main.nf
+Sep-17 14:27:52.787 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-17 14:27:52.787 [main] DEBUG nextflow.Session - Session await
+Sep-17 14:27:52.787 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-17 14:27:52.787 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-17 14:27:52.797 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Sep-17 14:27:53.007 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-17 14:27:53.033 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-17 14:27:53.034 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
